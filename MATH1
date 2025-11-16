@@ -1,0 +1,11 @@
+
+/* rexx math */                                                    
+say "Please enter two numbers:"                                    
+parse pull num1 num2                                               
+say "You entered" num1 "and" num2 "."                              
+say num1 "+" num2 "=" num1+num2                                    
+say num1 "-" num2 "=" num1-num2                                    
+say num1 "*" num2 "=" num1*num2                                    
+say num1 "/" num2 "=" num1/num2                                    
+say num1 "divided by" num2 "is" num1%num2 "whith a remainder of",  
+    num1//num2                           

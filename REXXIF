@@ -1,0 +1,17 @@
+/*REXX*/                             
+SAY "BMI CALCULATOR"                 
+SAY "WHAT IS YOUR WEIGHT? (POUNDS)"  
+PULL WEIGHT                          
+SAY "WHAT IS YOUR HEIGHT?(INCHES)"   
+PULL HEIGHT                          
+SQRH = HEIGHT * HEIGHT               
+BMI = WEIGHT /SQRH * 703             
+SAY "YOUR BMI IS: " BMI              
+IF BMI < 18.5 THEN                   
+ SAY "YOU ARE UNDERWEIGHT"           
+IF BMI > 18.5 & BMI <= 25 THEN       
+ SAY "YOU ARE HEALTHY WEIGHT"        
+IF BMI > 25 & BMI <=29.9  THEN       
+ SAY "YOU ARE OVERWEITH"             
+IF BMI > 30 THEN                     
+ SAY "YOU ARE OBESE"                 

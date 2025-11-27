@@ -1,0 +1,10 @@
+/* REXX */                    
+SAY "WHAT IS YOUR NAME "      
+PULL NAME                     
+SAY "WHAT IS YOUR HOMETOWN?"  
+PULL HOMETOWN                 
+SAY "WHAT IS YOUR MAJOR?"     
+PULL MAJOR                    
+SAY "YOUR NAME IS " NAME      
+SAY "YOU ARE FROM " HOMETOWN  
+SAY "YOUR MAJOR IS "MAJOR     

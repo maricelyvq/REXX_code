@@ -1,0 +1,19 @@
+ /* REXX */                                            
+ SAY "THIS IS A LOOP PROGRAM"                          
+ SAY "HOW MANY TIMES YOU LIKE THIS PROGRAM TO LOOP?"   
+ PULL COUNT                                            
+ DO I=1 TO COUNT                                       
+   SELECT                                              
+     WHEN I = 1 THEN                                   
+      LOOP = "FIRST"                                   
+     WHEN I = 2 THEN                                   
+      LOOP = "SECOND"                                  
+     WHEN I = 3 THEN                                   
+      LOOP = "THIRD"                                   
+     WHEN I > 3 THEN                                   
+      LOOP =I "TH"                                     
+   END                                                 
+   SAY "THIS IS THE "LOOP" TIME THROUGH THE LOOP"      
+ END                                                   
+ SAY "*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*" 
+ SAY "WE WENT TROUGH THE LOOP" I-1 "TIMES AND ARE DONE"

@@ -1,0 +1,25 @@
+/* REXX */                                         
+CALL 'TSOCLR'                                      
+SAY "THIS PROGRAM CREATE A LIST"                   
+SAY "IT WILL SHOW YOU ALL YOR ITEMS AT THE END"    
+SAY "YOU SHOULD ENTER AT LEAST *3* ITEMS"          
+INDEX = 1                                          
+DO WHILE INDEX < 4                                 
+  CALL ADDARRAY INDEX                              
+END                                                
+                                                   
+DO UNTIL ANS = S                                   
+ SAY "PRESS C TO CONTINUE OR S TO END THE PROGRAM" 
+ PULL ANS                                          
+ IF ANS = C THEN                                   
+  CALL ADDARRAY INDEX                              
+ ELSE DO                                           
+  IF ANS = S THEN                                  
+    CALL SHOW INDEX                                
+  ELSE                                             
+    ITERATE                                        
+ END                                               
+END                                                
+SAY "**********"                                   
+SAY "GOODBYE!"                                     
+EXIT                                               
